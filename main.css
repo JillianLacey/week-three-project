@@ -1,4 +1,54 @@
-/* colors used:
-dark green #61B34F
-light green #62B352
- */
+body {
+    margin: 0 auto;
+}
+
+div {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+}
+
+form {
+    align-self: center;
+}
+
+input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    background-color: #61B34F;
+    padding: 2rem;
+    border: 1px solid lightgray;
+    width: 100.5px;
+    color: white;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+}
+
+.operand {
+    background-color: #83c178;
+    color: black;
+}
+
+.operand:hover {
+    color: white;
+}
+
+.bgHover:hover {
+    background-color: #83c178;
+}
+
+.answer {
+    width: 236px;
+    text-align: right;
+}
+
+form {
+    width: 420px;
+    display: flex;
+    flex-wrap: wrap;
+}

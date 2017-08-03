@@ -2,6 +2,7 @@
 
 function btnPlus() {
     document.calculator.answer.value += "+";
+
 }
 
 function btnSub() {
