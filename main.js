@@ -2,9 +2,7 @@
 
 function btnPlus() {
     document.calculator.answer.value += "+";
-
 }
-
 function btnSub() {
     document.calculator.answer.value += "-";
 }
@@ -17,3 +15,19 @@ function btnMult() {
 function btnDiv() {
     document.calculator.answer.value += "/";
 }
+function btnOpenParen() {
+    document.calculator.answer.value += "(";
+}
+function btnCloseParen() {
+    document.calculator.answer.value += ")";
+}
+function btnModulo() {
+    document.calculator.answer.value += "%";
+}
+function btnSqrt() {
+    // document.calculator.answer.value = "Math.sqrt(n)";
+    Math.sqrt(document.calculator.answer.value);
+}
+
+
+

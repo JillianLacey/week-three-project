@@ -11,33 +11,39 @@
 
 <body>
 
-
-    <div id="calc-contain">
-        <form name="calculator">
-            <input class="bgHover" type="button" value=" C " onClick="btnClear()" />
+    <form name="calculator">
+        <div class="container-1">
+            <input class="clearBtn bgHover" type="button" value=" C " onClick="btnClear()" />
             <input class="answer" type="text" name="answer" />
-            <br>
-            <input type="button" value=" 7 " onClick="calculator.answer.value += '7'" />
-            <input type="button" value=" 8 " onClick="calculator.answer.value += '8'" />
-            <input type="button" value=" 9 " onClick="calculator.answer.value += '9'" />
-            <input class="operand" type="button" value=" / " onClick="btnDiv()" />
-            <br>
-            <input type="button" value=" 4 " onClick="calculator.answer.value += '4'" />
-            <input type="button" value=" 5 " onClick="calculator.answer.value += '5'" />
-            <input type="button" value=" 6 " onClick="calculator.answer.value += '6'" />
-            <input class="operand" type="button" value=" x " onClick="btnMult()" />
-            <br>
-            <input type="button" value=" 1 " onClick="calculator.answer.value += '1'" />
-            <input type="button" value=" 2 " onClick="calculator.answer.value += '2'" />
-            <input type="button" value=" 3 " onClick="calculator.answer.value += '3'" />
-            <input class="operand" type="button" value=" - " onClick="btnSub()" />
-            <br>
-            <input type="button" value=" 0 " onClick="calculator.answer.value += '0'" />
-            <input type="button" value=" . " onClick="calculator.answer.value += '.'" />
-            <input class="bgHover" type="button" value=" = " onClick="calculator.answer.value = eval(calculator.answer.value)" />
-            <input class="operand" type="button" value="+" onClick="btnPlus()" />
-        </form>
-    </div>
+        </div>
+        <div class="container-2">
+            <input class="num-style" type="button" value=" 7 " onClick="calculator.answer.value += '7'" />
+            <input class="num-style" type="button" value=" 8 " onClick="calculator.answer.value += '8'" />
+            <input class="num-style" type="button" value=" 9 " onClick="calculator.answer.value += '9'" />
+            <input class="num-style operand" type="button" value=" ( " onClick="btnOpenParen()" />
+            <input class="num-style operand" type="button" value=" ) " onClick="btnCloseParen()" />
+
+            <input class="num-style" type="button" value=" 4 " onClick="calculator.answer.value += '4'" />
+            <input class="num-style" type="button" value=" 5 " onClick="calculator.answer.value += '5'" />
+            <input class="num-style" type="button" value=" 6 " onClick="calculator.answer.value += '6'" />
+            <input class="num-style operand" type="button" value=" % " onClick="btnModulo()" />
+            <input class="num-style operand" type="button" value=" &radic; " onClick="btnSqrt()" />
+
+            <input class="num-style" type="button" value=" 1 " onClick="calculator.answer.value += '1'" />
+            <input class="num-style" type="button" value=" 2 " onClick="calculator.answer.value += '2'" />
+            <input class="num-style" type="button" value=" 3 " onClick="calculator.answer.value += '3'" />
+            <input class="num-style operand" type="button" value=" x " onClick="btnMult()" />
+            <input class="num-style operand" type="button" value=" / " onClick="btnDiv()" />
+
+            <input class="num-style" type="button" value=" 0 " onClick="calculator.answer.value += '0'" />
+            <input class="num-style" type="button" value=" . " onClick="calculator.answer.value += '.'" />
+            <input class="num-style bgHover" type="button" value=" = " onClick="calculator.answer.value = eval(calculator.answer.value)"
+            />
+            <input class="num-style operand" type="button" value="+" onClick="btnPlus()" />
+            <input class="num-style operand" type="button" value="-" onClick="btnSub()" />
+        </div>
+    </form>
+
 
 
     <script src="main.js"></script>

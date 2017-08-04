@@ -1,28 +1,57 @@
 body {
     margin: 0 auto;
-}
-
-div {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    min-height: 100vh;
     display: flex;
-    height: 100vh;
-    width: 100vw;
     justify-content: center;
 }
 
 form {
-    align-self: center;
+    margin-top: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 380px;
 }
 
 input {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
     background-color: #61B34F;
-    padding: 2rem;
-    border: 1px solid lightgray;
-    width: 100.5px;
+    font-size: 1.5rem;
+    font-weight: 200;
     color: white;
-    font-weight: 100;
+    padding: 1.5rem 1rem;
     cursor: pointer;
+    border: 1px solid lightgray;
+    border-top: none;
+    border-left: none;
+}
+
+.container-1, .container-2 {
+    display: flex;
+}
+
+.clearBtn {
+    flex: 1 0 31%;
+}
+
+.answer {
+    text-align: right;
+    /* width: 409px; */
+    flex: 1 0 113.5%;
+}
+
+.container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 20px;
+}
+
+.num-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    flex: 1 1 20%;
 }
 
 input:focus {
@@ -31,7 +60,7 @@ input:focus {
 
 .operand {
     background-color: #83c178;
-    color: black;
+    color: #3c4f3c;
 }
 
 .operand:hover {
@@ -40,15 +69,4 @@ input:focus {
 
 .bgHover:hover {
     background-color: #83c178;
-}
-
-.answer {
-    width: 236px;
-    text-align: right;
-}
-
-form {
-    width: 420px;
-    display: flex;
-    flex-wrap: wrap;
 }
