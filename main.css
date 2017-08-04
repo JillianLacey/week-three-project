@@ -26,21 +26,20 @@ input {
     border-left: none;
 }
 
-.container-1, .container-2 {
+.btnValues {
     display: flex;
 }
 
 .clearBtn {
-    flex: 1 0 31%;
+    flex: 1 0 15.1%;
 }
 
 .answer {
     text-align: right;
-    /* width: 409px; */
-    flex: 1 0 113.5%;
+    flex: 3 0 59%;
 }
 
-.container-2 {
+.btnValues {
     display: flex;
     flex-wrap: wrap;
     min-width: 20px;

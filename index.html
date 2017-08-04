@@ -12,11 +12,10 @@
 <body>
 
     <form name="calculator">
-        <div class="container-1">
+        <div class="btnValues">
             <input class="clearBtn bgHover" type="button" value=" C " onClick="btnClear()" />
             <input class="answer" type="text" name="answer" />
-        </div>
-        <div class="container-2">
+
             <input class="num-style" type="button" value=" 7 " onClick="calculator.answer.value += '7'" />
             <input class="num-style" type="button" value=" 8 " onClick="calculator.answer.value += '8'" />
             <input class="num-style" type="button" value=" 9 " onClick="calculator.answer.value += '9'" />
@@ -27,7 +26,8 @@
             <input class="num-style" type="button" value=" 5 " onClick="calculator.answer.value += '5'" />
             <input class="num-style" type="button" value=" 6 " onClick="calculator.answer.value += '6'" />
             <input class="num-style operand" type="button" value=" % " onClick="btnModulo()" />
-            <input class="num-style operand" type="button" value=" &radic; " onClick="btnSqrt()" />
+            <input class="num-style operand" type="button" value=" &radic; " onClick="calculator.answer.value = Math.sqrt(calculator.answer.value)"
+            />
 
             <input class="num-style" type="button" value=" 1 " onClick="calculator.answer.value += '1'" />
             <input class="num-style" type="button" value=" 2 " onClick="calculator.answer.value += '2'" />

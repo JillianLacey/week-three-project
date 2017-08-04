@@ -24,10 +24,6 @@ function btnCloseParen() {
 function btnModulo() {
     document.calculator.answer.value += "%";
 }
-function btnSqrt() {
-    // document.calculator.answer.value = "Math.sqrt(n)";
-    Math.sqrt(document.calculator.answer.value);
-}
 
 
 
